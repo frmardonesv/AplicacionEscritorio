@@ -1,0 +1,137 @@
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\bin\Debug\PruebasBeta.exe.config
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\bin\Debug\PruebasBeta.exe
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\bin\Debug\PruebasBeta.pdb
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Form1.resources
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Properties.Resources.resources
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.csproj.GenerateResource.cache
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.csproj.CoreCompileInputs.cache
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.exe
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.pdb
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.csprojAssemblyReference.cache
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Usuario.resources
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.csproj.CopyComplete
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Departamento.resources
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Clientes.resources
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Estadisticas.resources
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.FormuDepartamento.resources
+C:\Users\Mi PC\source\repos\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.FormuCliente.resources
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\PruebasBeta.exe.config
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\PruebasBeta.exe
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\PruebasBeta.pdb
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.csprojAssemblyReference.cache
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Clientes.resources
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Departamento.resources
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Estadisticas.resources
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Form1.resources
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.FormuCliente.resources
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.FormuDepartamento.resources
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Properties.Resources.resources
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Usuario.resources
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.csproj.GenerateResource.cache
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.csproj.CoreCompileInputs.cache
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.csproj.CopyComplete
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.exe
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.pdb
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.ModificarCliente.resources
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.FormuFuncionario.resources
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Funcionarios.resources
+C:\Users\marce\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.ModificarFuncionarios.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\PruebasBeta.exe.config
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\PruebasBeta.exe
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\PruebasBeta.pdb
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.csprojAssemblyReference.cache
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Clientes.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Departamento.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Estadisticas.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Funcionarios.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Form1.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Properties.Resources.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.csproj.GenerateResource.cache
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.csproj.CoreCompileInputs.cache
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.csproj.CopyComplete
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.exe
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.pdb
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Inventario.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.VistaAdmin.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.VistaFuncionario.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.VistaSuperAdmin.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.CheckIn.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.CheckList.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\Common.Logging.Core.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\Common.Logging.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.barcodes.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.forms.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.io.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.kernel.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.layout.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.pdfa.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.sign.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.styledxmlparser.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.svg.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\Common.Logging.pdb
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\Common.Logging.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\Common.Logging.Core.pdb
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\Common.Logging.Core.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.barcodes.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.forms.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.io.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.kernel.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.layout.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.pdfa.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.sign.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.styledxmlparser.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itext.svg.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itextsharp.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\bin\Debug\itextsharp.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\uwuu\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Servicios.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\PruebasBeta.exe.config
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\PruebasBeta.exe
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\PruebasBeta.pdb
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\Common.Logging.Core.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\Common.Logging.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.barcodes.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.forms.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.io.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.kernel.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.layout.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.pdfa.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.sign.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.styledxmlparser.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.svg.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itextsharp.dll
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\Common.Logging.pdb
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\Common.Logging.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\Common.Logging.Core.pdb
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\Common.Logging.Core.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.barcodes.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.forms.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.io.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.kernel.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.layout.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.pdfa.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.sign.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.styledxmlparser.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itext.svg.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\bin\Debug\itextsharp.xml
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.csprojAssemblyReference.cache
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.CheckIn.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.CheckList.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Clientes.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Departamento.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Estadisticas.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Funcionarios.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Inventario.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Form1.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Properties.Resources.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.Servicios.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.VistaAdmin.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.VistaFuncionario.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.VistaSuperAdmin.resources
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.csproj.GenerateResource.cache
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.csproj.CoreCompileInputs.cache
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.csproj.CopyComplete
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.exe
+C:\Users\Mi PC\Desktop\Aplicacion escritorio\AplicaciónEscritorio\PruebasBeta\PruebasBeta\obj\Debug\PruebasBeta.pdb
