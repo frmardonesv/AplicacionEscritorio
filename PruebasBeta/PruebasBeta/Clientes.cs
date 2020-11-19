@@ -140,6 +140,15 @@ namespace PruebasBeta
 
         private void bunifuFlatButton1_Click_1(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtCli.Text))
+            {
+
+                MessageBox.Show("Primero debe elegir un cliente para actualizarlo.");
+
+                return;
+
+            }
+
             panelPrinc.Visible = false;
             panelFormCliente.Dock = DockStyle.Fill;
             panelFormCliente.Visible = true;
