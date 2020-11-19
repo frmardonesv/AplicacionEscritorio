@@ -134,6 +134,14 @@ namespace PruebasBeta
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtInv.Text))
+            {
+
+                MessageBox.Show("Primero debe elegir un inventario para actualizarlo.");
+
+                return;
+
+            }
             panelPrinc.Visible = false;
             panelInventario.Dock = DockStyle.Fill;
             panelInventario.Visible = true;
