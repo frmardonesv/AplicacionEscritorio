@@ -151,7 +151,9 @@ namespace PruebasBeta
             openChildFormInPanel(new CheckList());
         }
 
-        private void btnLogOut_Click(object sender, EventArgs e)
+
+
+        private void pictureBox6_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Quiere cerrar su sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
@@ -162,6 +164,32 @@ namespace PruebasBeta
             {
                 this.Activate();
             }
+        }
+
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+        }
+
+        private void btnClientes_Click_1(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new Clientes());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new CheckIn());
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new CheckList());
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

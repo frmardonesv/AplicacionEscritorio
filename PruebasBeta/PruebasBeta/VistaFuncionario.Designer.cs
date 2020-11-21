@@ -36,14 +36,7 @@
             this.Maximizar = new System.Windows.Forms.PictureBox();
             this.Salir = new System.Windows.Forms.PictureBox();
             this.SidebarWrapper = new System.Windows.Forms.Panel();
-            this.btnLogOut = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCheckList = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnInicio = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnClientes = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.LineaSidebar = new Bunifu.Framework.UI.BunifuSeparator();
-            this.btnCheckIn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MoverDash = new Bunifu.Framework.UI.BunifuDragControl(this.components);
@@ -54,6 +47,15 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.btnInicio = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnClientes = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.btnCheckIn = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.MenuTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
@@ -61,18 +63,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.Salir)).BeginInit();
             this.SidebarWrapper.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panelChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuTop
             // 
-            this.MenuTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+            this.MenuTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
             this.MenuTop.Controls.Add(this.Restaurar);
             this.MenuTop.Controls.Add(this.Minimizar);
             this.MenuTop.Controls.Add(this.Maximizar);
@@ -135,8 +137,8 @@
             // 
             // SidebarWrapper
             // 
-            this.SidebarWrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
-            this.SidebarWrapper.Controls.Add(this.btnLogOut);
+            this.SidebarWrapper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.SidebarWrapper.Controls.Add(this.pictureBox6);
             this.SidebarWrapper.Controls.Add(this.panel1);
             this.SidebarWrapper.Dock = System.Windows.Forms.DockStyle.Left;
             this.SidebarWrapper.Location = new System.Drawing.Point(0, 72);
@@ -145,240 +147,26 @@
             this.SidebarWrapper.TabIndex = 1;
             this.SidebarWrapper.Paint += new System.Windows.Forms.PaintEventHandler(this.SidebarWrapper_Paint);
             // 
-            // btnLogOut
-            // 
-            this.btnLogOut.Activecolor = System.Drawing.Color.Transparent;
-            this.btnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(104)))));
-            this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLogOut.BorderRadius = 0;
-            this.btnLogOut.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.btnLogOut.ButtonText = "      Log Out";
-            this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogOut.DisabledColor = System.Drawing.Color.Transparent;
-            this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOut.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnLogOut.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Iconimage")));
-            this.btnLogOut.Iconimage_right = null;
-            this.btnLogOut.Iconimage_right_Selected = null;
-            this.btnLogOut.Iconimage_Selected = null;
-            this.btnLogOut.IconMarginLeft = 0;
-            this.btnLogOut.IconMarginRight = 0;
-            this.btnLogOut.IconRightVisible = true;
-            this.btnLogOut.IconRightZoom = 0D;
-            this.btnLogOut.IconVisible = true;
-            this.btnLogOut.IconZoom = 90D;
-            this.btnLogOut.IsTab = false;
-            this.btnLogOut.Location = new System.Drawing.Point(26, 650);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(104)))));
-            this.btnLogOut.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(104)))));
-            this.btnLogOut.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnLogOut.selected = false;
-            this.btnLogOut.Size = new System.Drawing.Size(242, 49);
-            this.btnLogOut.TabIndex = 6;
-            this.btnLogOut.Text = "      Log Out";
-            this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogOut.Textcolor = System.Drawing.Color.White;
-            this.btnLogOut.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
-            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(104)))));
-            this.panel1.Controls.Add(this.btnCheckList);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnInicio);
-            this.panel1.Controls.Add(this.btnClientes);
-            this.panel1.Controls.Add(this.LineaSidebar);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.panel7);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.btnCheckIn);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.btnClientes);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.btnInicio);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(12, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(270, 340);
+            this.panel1.Size = new System.Drawing.Size(270, 561);
             this.panel1.TabIndex = 1;
-            // 
-            // btnCheckList
-            // 
-            this.btnCheckList.Activecolor = System.Drawing.Color.Transparent;
-            this.btnCheckList.BackColor = System.Drawing.Color.Transparent;
-            this.btnCheckList.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCheckList.BorderRadius = 0;
-            this.btnCheckList.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.btnCheckList.ButtonText = "      Check Out";
-            this.btnCheckList.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCheckList.DisabledColor = System.Drawing.Color.Gray;
-            this.btnCheckList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckList.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnCheckList.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCheckList.Iconimage")));
-            this.btnCheckList.Iconimage_right = null;
-            this.btnCheckList.Iconimage_right_Selected = null;
-            this.btnCheckList.Iconimage_Selected = null;
-            this.btnCheckList.IconMarginLeft = 0;
-            this.btnCheckList.IconMarginRight = 0;
-            this.btnCheckList.IconRightVisible = true;
-            this.btnCheckList.IconRightZoom = 0D;
-            this.btnCheckList.IconVisible = true;
-            this.btnCheckList.IconZoom = 90D;
-            this.btnCheckList.IsTab = false;
-            this.btnCheckList.Location = new System.Drawing.Point(14, 260);
-            this.btnCheckList.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCheckList.Name = "btnCheckList";
-            this.btnCheckList.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnCheckList.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnCheckList.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnCheckList.selected = false;
-            this.btnCheckList.Size = new System.Drawing.Size(242, 49);
-            this.btnCheckList.TabIndex = 13;
-            this.btnCheckList.Text = "      Check Out";
-            this.btnCheckList.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCheckList.Textcolor = System.Drawing.Color.White;
-            this.btnCheckList.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckList.Click += new System.EventHandler(this.btnCheckList_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(75, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Bienvenido";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // btnInicio
-            // 
-            this.btnInicio.Activecolor = System.Drawing.Color.Transparent;
-            this.btnInicio.BackColor = System.Drawing.Color.Transparent;
-            this.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnInicio.BorderRadius = 0;
-            this.btnInicio.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.btnInicio.ButtonText = "      Inicio";
-            this.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInicio.DisabledColor = System.Drawing.Color.Gray;
-            this.btnInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicio.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnInicio.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnInicio.Iconimage")));
-            this.btnInicio.Iconimage_right = null;
-            this.btnInicio.Iconimage_right_Selected = null;
-            this.btnInicio.Iconimage_Selected = null;
-            this.btnInicio.IconMarginLeft = 0;
-            this.btnInicio.IconMarginRight = 0;
-            this.btnInicio.IconRightVisible = true;
-            this.btnInicio.IconRightZoom = 0D;
-            this.btnInicio.IconVisible = true;
-            this.btnInicio.IconZoom = 90D;
-            this.btnInicio.IsTab = false;
-            this.btnInicio.Location = new System.Drawing.Point(14, 89);
-            this.btnInicio.Margin = new System.Windows.Forms.Padding(4);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnInicio.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnInicio.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnInicio.selected = false;
-            this.btnInicio.Size = new System.Drawing.Size(242, 49);
-            this.btnInicio.TabIndex = 4;
-            this.btnInicio.Text = "      Inicio";
-            this.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInicio.Textcolor = System.Drawing.Color.White;
-            this.btnInicio.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicio.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
-            // 
-            // btnClientes
-            // 
-            this.btnClientes.Activecolor = System.Drawing.Color.Transparent;
-            this.btnClientes.BackColor = System.Drawing.Color.Transparent;
-            this.btnClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnClientes.BorderRadius = 0;
-            this.btnClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.btnClientes.ButtonText = "      Clientes";
-            this.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClientes.DisabledColor = System.Drawing.Color.Gray;
-            this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnClientes.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnClientes.Iconimage")));
-            this.btnClientes.Iconimage_right = null;
-            this.btnClientes.Iconimage_right_Selected = null;
-            this.btnClientes.Iconimage_Selected = null;
-            this.btnClientes.IconMarginLeft = 0;
-            this.btnClientes.IconMarginRight = 0;
-            this.btnClientes.IconRightVisible = true;
-            this.btnClientes.IconRightZoom = 0D;
-            this.btnClientes.IconVisible = true;
-            this.btnClientes.IconZoom = 90D;
-            this.btnClientes.IsTab = false;
-            this.btnClientes.Location = new System.Drawing.Point(14, 146);
-            this.btnClientes.Margin = new System.Windows.Forms.Padding(4);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnClientes.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnClientes.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnClientes.selected = false;
-            this.btnClientes.Size = new System.Drawing.Size(242, 49);
-            this.btnClientes.TabIndex = 10;
-            this.btnClientes.Text = "      Clientes";
-            this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.Textcolor = System.Drawing.Color.White;
-            this.btnClientes.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
-            // 
-            // LineaSidebar
-            // 
-            this.LineaSidebar.BackColor = System.Drawing.Color.Transparent;
-            this.LineaSidebar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.LineaSidebar.LineThickness = 1;
-            this.LineaSidebar.Location = new System.Drawing.Point(3, 57);
-            this.LineaSidebar.Name = "LineaSidebar";
-            this.LineaSidebar.Size = new System.Drawing.Size(264, 10);
-            this.LineaSidebar.TabIndex = 3;
-            this.LineaSidebar.Transparency = 255;
-            this.LineaSidebar.Vertical = false;
-            this.LineaSidebar.Load += new System.EventHandler(this.bunifuSeparator1_Load);
-            // 
-            // btnCheckIn
-            // 
-            this.btnCheckIn.Activecolor = System.Drawing.Color.Transparent;
-            this.btnCheckIn.BackColor = System.Drawing.Color.Transparent;
-            this.btnCheckIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCheckIn.BorderRadius = 0;
-            this.btnCheckIn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.btnCheckIn.ButtonText = "      Check In";
-            this.btnCheckIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCheckIn.DisabledColor = System.Drawing.Color.Gray;
-            this.btnCheckIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckIn.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnCheckIn.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCheckIn.Iconimage")));
-            this.btnCheckIn.Iconimage_right = null;
-            this.btnCheckIn.Iconimage_right_Selected = null;
-            this.btnCheckIn.Iconimage_Selected = null;
-            this.btnCheckIn.IconMarginLeft = 0;
-            this.btnCheckIn.IconMarginRight = 0;
-            this.btnCheckIn.IconRightVisible = true;
-            this.btnCheckIn.IconRightZoom = 0D;
-            this.btnCheckIn.IconVisible = true;
-            this.btnCheckIn.IconZoom = 90D;
-            this.btnCheckIn.IsTab = false;
-            this.btnCheckIn.Location = new System.Drawing.Point(14, 203);
-            this.btnCheckIn.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCheckIn.Name = "btnCheckIn";
-            this.btnCheckIn.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnCheckIn.OnHovercolor = System.Drawing.Color.Transparent;
-            this.btnCheckIn.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnCheckIn.selected = false;
-            this.btnCheckIn.Size = new System.Drawing.Size(242, 49);
-            this.btnCheckIn.TabIndex = 11;
-            this.btnCheckIn.Text = "      Check In";
-            this.btnCheckIn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCheckIn.Textcolor = System.Drawing.Color.White;
-            this.btnCheckIn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckIn.Click += new System.EventHandler(this.btnCheckIn_Click);
             // 
             // panelChildForm
             // 
-            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(104)))));
-            this.panelChildForm.Controls.Add(this.pictureBox1);
+            this.panelChildForm.BackColor = System.Drawing.Color.Gainsboro;
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(300, 72);
             this.panelChildForm.Name = "panelChildForm";
@@ -388,14 +176,13 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(408, 203);
+            this.pictureBox1.Location = new System.Drawing.Point(14, 19);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(293, 304);
+            this.pictureBox1.Size = new System.Drawing.Size(242, 190);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -408,7 +195,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox4);
@@ -466,12 +253,120 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel3.Location = new System.Drawing.Point(1369, 72);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(17, 699);
             this.panel3.TabIndex = 9;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(26, 637);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(73, 62);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 14;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // btnInicio
+            // 
+            this.btnInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnInicio.FlatAppearance.BorderSize = 0;
+            this.btnInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInicio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.ForeColor = System.Drawing.Color.White;
+            this.btnInicio.Location = new System.Drawing.Point(6, 236);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(264, 43);
+            this.btnInicio.TabIndex = 14;
+            this.btnInicio.Text = "Inicio";
+            this.btnInicio.UseVisualStyleBackColor = false;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.panel4.Location = new System.Drawing.Point(0, 236);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(16, 43);
+            this.panel4.TabIndex = 0;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.panel5.Location = new System.Drawing.Point(0, 298);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(16, 43);
+            this.panel5.TabIndex = 15;
+            // 
+            // btnClientes
+            // 
+            this.btnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnClientes.FlatAppearance.BorderSize = 0;
+            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClientes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.ForeColor = System.Drawing.Color.White;
+            this.btnClientes.Location = new System.Drawing.Point(6, 298);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(264, 43);
+            this.btnClientes.TabIndex = 16;
+            this.btnClientes.Text = "Clientes";
+            this.btnClientes.UseVisualStyleBackColor = false;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click_1);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.panel6.Location = new System.Drawing.Point(0, 359);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(16, 43);
+            this.panel6.TabIndex = 17;
+            // 
+            // btnCheckIn
+            // 
+            this.btnCheckIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnCheckIn.FlatAppearance.BorderSize = 0;
+            this.btnCheckIn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.btnCheckIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckIn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckIn.ForeColor = System.Drawing.Color.White;
+            this.btnCheckIn.Location = new System.Drawing.Point(6, 359);
+            this.btnCheckIn.Name = "btnCheckIn";
+            this.btnCheckIn.Size = new System.Drawing.Size(264, 43);
+            this.btnCheckIn.TabIndex = 18;
+            this.btnCheckIn.Text = "Check In";
+            this.btnCheckIn.UseVisualStyleBackColor = false;
+            this.btnCheckIn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.panel7.Location = new System.Drawing.Point(0, 421);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(16, 43);
+            this.panel7.TabIndex = 19;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(6, 421);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(264, 43);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Disponibilidad";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // VistaFuncionario
             // 
@@ -494,14 +389,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.Salir)).EndInit();
             this.SidebarWrapper.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panelChildForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -518,19 +412,21 @@
         private Bunifu.Framework.UI.BunifuDragControl MoverDash;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuFlatButton btnCheckList;
-        private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuFlatButton btnInicio;
-        private Bunifu.Framework.UI.BunifuFlatButton btnClientes;
-        private Bunifu.Framework.UI.BunifuSeparator LineaSidebar;
-        private Bunifu.Framework.UI.BunifuFlatButton btnCheckIn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel3;
-        private Bunifu.Framework.UI.BunifuFlatButton btnLogOut;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button btnInicio;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Button btnCheckIn;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button button1;
     }
 }

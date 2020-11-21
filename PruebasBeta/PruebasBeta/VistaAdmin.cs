@@ -62,38 +62,15 @@ namespace PruebasBeta
             childForm.Show();
         }
 
-        private void btnDepartamento_Click(object sender, EventArgs e)
-        {
-            openChildFormInPanel(new Departamento());
-        }
 
         private void btnMantenciones_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
-        {
-            Funcionarios formulario = new Funcionarios();
-            formulario.Show();
-        }
-
         private void MenuTop_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void btnLogOut_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("¿Quiere cerrar su sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                this.Hide();
-                formularioLogin.Show();
-            }
-            else
-            {
-                this.Activate();
-            }
         }
 
         private void SidebarWrapper_Paint(object sender, PaintEventArgs e)
@@ -112,24 +89,63 @@ namespace PruebasBeta
 
         }
 
-        private void btnEstadisticas_Click(object sender, EventArgs e)
+        private void btnLogOut_Click_1(object sender, EventArgs e)
         {
-            openChildFormInPanel(new Estadisticas());
+            if (MessageBox.Show("¿Quiere cerrar su sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                this.Hide();
+                formularioLogin.Show();
+            }
+            else
+            {
+                this.Activate();
+            }
         }
 
-        private void btnClientes_Click(object sender, EventArgs e)
+        private void btnLogOut_Click(object sender, EventArgs e)
         {
-            openChildFormInPanel(new Clientes());
+
         }
 
-        private void btnInventario_Click(object sender, EventArgs e)
+        private void pictureBox6_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Quiere cerrar su sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                this.Hide();
+                formularioLogin.Show();
+            }
+            else
+            {
+                this.Activate();
+            }
+        }
+
+        private void btnInicio_Click_1(object sender, EventArgs e)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+        }
+
+
+        private void btnDepartame_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new Departamento());
+        }
+
+
+        private void btnInventario_Click_1(object sender, EventArgs e)
         {
             openChildFormInPanel(new Inventario());
         }
 
-        private void btnServicios_Click(object sender, EventArgs e)
+        private void btnServicios_Click_1(object sender, EventArgs e)
         {
             openChildFormInPanel(new Servicios());
+        }
+
+        private void btnEstadisticas_Click_1(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new Estadisticas());
         }
     }
 }

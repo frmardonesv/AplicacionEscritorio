@@ -39,62 +39,6 @@ namespace PruebasBeta
 
         }
 
-        private void btnInicio_Click(object sender, EventArgs e)
-        {
-             if(string.IsNullOrEmpty(txtUsuario.Text)|| string.IsNullOrEmpty(txtContra.Text)){
-
-                 MessageBox.Show("Debe completar la informacion");  
-
-                return;
-
-            }
-            {
-                {
-                    ora.Open();
-                    OracleCommand comando = new OracleCommand("Select rut, contraseña, ZONAS_ID_ZONAS, TIPO_PERSONAL_ID_TIPO_PRS from personal WHERE rut =  :usuario AND contraseña = :contra", ora);
-
-                    comando.Parameters.AddWithValue(":usuario", txtUsuario.Text);
-                    comando.Parameters.AddWithValue(":contra", txtContra.Text);
-
-                    OracleDataReader lector = comando.ExecuteReader();
-
-                    Form1 formularioLogin = new Form1();
-                    if (lector.Read())
-                    {
-
-                        if (lector["TIPO_PERSONAL_ID_TIPO_PRS"].ToString() == "1")
-                        {
-                            MessageBox.Show("Bienvenido funcioanario");
-                            VistaFuncionario formulario = new VistaFuncionario();
-                            ora.Close();
-                            formulario.Show();
-                            this.Hide();
-                        }
-                        else if (lector["TIPO_PERSONAL_ID_TIPO_PRS"].ToString() == "2")
-                        {
-                            MessageBox.Show("Bienvenido Administrador");
-                            VistaAdmin formulario = new VistaAdmin();
-                            ora.Close();
-                            formulario.Show();
-                            this.Hide();
-                        }
-                        else if (lector["TIPO_PERSONAL_ID_TIPO_PRS"].ToString() == "3")
-                        {
-                            MessageBox.Show("Bienvenido SuperAdministrador");
-                            VistaSuperAdmin formulario = new VistaSuperAdmin();
-                            ora.Close();
-                            formulario.Show();
-                            this.Hide();
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Usuario incorrecto");
-                    }
-                    ora.Close();
-                }
-            }
-        }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
@@ -130,6 +74,63 @@ namespace PruebasBeta
 
         }
 
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtUsuario.Text) || string.IsNullOrEmpty(txtContra.Text))
+            {
+
+                MessageBox.Show("Usuario y/o contraseña incorrecta.");
+
+                return;
+
+            }
+            {
+                {
+                    ora.Open();
+                    OracleCommand comando = new OracleCommand("Select rut, contraseña, ZONAS_ID_ZONAS, TIPO_PERSONAL_ID_TIPO_PRS from personal WHERE rut =  :usuario AND contraseña = :contra", ora);
+
+                    comando.Parameters.AddWithValue(":usuario", txtUsuario.Text);
+                    comando.Parameters.AddWithValue(":contra", txtContra.Text);
+
+                    OracleDataReader lector = comando.ExecuteReader();
+
+                    Form1 formularioLogin = new Form1();
+                    if (lector.Read())
+                    {
+
+                        if (lector["TIPO_PERSONAL_ID_TIPO_PRS"].ToString() == "2")
+                        {
+                            MessageBox.Show("Bienvenido funcioanario");
+                            VistaFuncionario formulario = new VistaFuncionario();
+                            ora.Close();
+                            formulario.Show();
+                            this.Hide();
+                        }
+                        else if (lector["TIPO_PERSONAL_ID_TIPO_PRS"].ToString() == "1")
+                        {
+                            MessageBox.Show("Bienvenido Administrador");
+                            VistaAdmin formulario = new VistaAdmin();
+                            ora.Close();
+                            formulario.Show();
+                            this.Hide();
+                        }
+                        else if (lector["TIPO_PERSONAL_ID_TIPO_PRS"].ToString() == "3")
+                        {
+                            MessageBox.Show("Bienvenido SuperAdministrador");
+                            VistaSuperAdmin formulario = new VistaSuperAdmin();
+                            ora.Close();
+                            formulario.Show();
+                            this.Hide();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuario incorrecto");
+                    }
+                    ora.Close();
+                }
+            }
+        }
     }
 }
 

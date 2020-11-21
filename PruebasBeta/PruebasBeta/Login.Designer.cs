@@ -32,7 +32,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnInicio = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txtContra = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,6 +39,9 @@
             this.Minimizar = new System.Windows.Forms.PictureBox();
             this.Salir = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.MenuTop.SuspendLayout();
@@ -50,10 +52,12 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(59)))), ((int)(((byte)(104)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.btnLogin);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.btnInicio);
             this.panel2.Controls.Add(this.txtContra);
             this.panel2.Controls.Add(this.txtUsuario);
             this.panel2.Controls.Add(this.label1);
@@ -71,9 +75,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(61, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(61, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(290, 251);
+            this.pictureBox1.Size = new System.Drawing.Size(290, 257);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
@@ -88,41 +92,6 @@
             this.label2.Size = new System.Drawing.Size(103, 21);
             this.label2.TabIndex = 15;
             this.label2.Text = "Contraseña";
-            // 
-            // btnInicio
-            // 
-            this.btnInicio.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
-            this.btnInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
-            this.btnInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnInicio.BorderRadius = 7;
-            this.btnInicio.ButtonText = "                Iniciar sesión";
-            this.btnInicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInicio.DisabledColor = System.Drawing.Color.Gray;
-            this.btnInicio.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnInicio.Iconimage = null;
-            this.btnInicio.Iconimage_right = null;
-            this.btnInicio.Iconimage_right_Selected = null;
-            this.btnInicio.Iconimage_Selected = null;
-            this.btnInicio.IconMarginLeft = 0;
-            this.btnInicio.IconMarginRight = 0;
-            this.btnInicio.IconRightVisible = true;
-            this.btnInicio.IconRightZoom = 0D;
-            this.btnInicio.IconVisible = true;
-            this.btnInicio.IconZoom = 90D;
-            this.btnInicio.IsTab = false;
-            this.btnInicio.Location = new System.Drawing.Point(98, 446);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
-            this.btnInicio.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
-            this.btnInicio.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnInicio.selected = false;
-            this.btnInicio.Size = new System.Drawing.Size(183, 46);
-            this.btnInicio.TabIndex = 12;
-            this.btnInicio.Text = "                Iniciar sesión";
-            this.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInicio.Textcolor = System.Drawing.Color.White;
-            this.btnInicio.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
             // txtContra
             // 
@@ -169,7 +138,7 @@
             // 
             // MenuTop
             // 
-            this.MenuTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+            this.MenuTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
             this.MenuTop.Controls.Add(this.Minimizar);
             this.MenuTop.Controls.Add(this.Salir);
             this.MenuTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -213,6 +182,38 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.panel7.Location = new System.Drawing.Point(81, 439);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(16, 43);
+            this.panel7.TabIndex = 21;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnLogin.FlatAppearance.BorderSize = 0;
+            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(81, 439);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(227, 43);
+            this.btnLogin.TabIndex = 22;
+            this.btnLogin.Text = "Iniciar Sesión";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(62)))), ((int)(((byte)(138)))));
+            this.panel3.Location = new System.Drawing.Point(292, 439);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(16, 43);
+            this.panel3.TabIndex = 23;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,7 +239,6 @@
         #endregion
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuFlatButton btnInicio;
         private System.Windows.Forms.TextBox txtContra;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Panel MenuTop;
@@ -247,6 +247,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button btnLogin;
     }
 }
 

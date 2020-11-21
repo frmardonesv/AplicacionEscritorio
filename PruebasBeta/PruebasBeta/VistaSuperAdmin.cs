@@ -24,18 +24,7 @@ namespace PruebasBeta
             Application.Exit();
         }
 
-        private void btnLogOut_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("¿Quiere cerrar su sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                this.Hide();
-                formularioLogin.Show();
-            }
-            else
-            {
-                this.Activate();
-            }
-        }
+
         private void SidebarWrapper_Paint(object sender, PaintEventArgs e)
         {
 
@@ -61,15 +50,6 @@ namespace PruebasBeta
             childForm.Show();
         }
 
-        private void btnDepartamento_Click(object sender, EventArgs e)
-        {
-            openChildFormInPanel(new Departamento());
-        }
-
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
-        {
-            openChildFormInPanel(new Estadisticas());
-        }
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
@@ -77,9 +57,49 @@ namespace PruebasBeta
                 activeForm.Close();
         }
 
-        private void btnServicios_Click(object sender, EventArgs e)
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Quiere cerrar su sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                this.Hide();
+                formularioLogin.Show();
+            }
+            else
+            {
+                this.Activate();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new Servicios());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new Funcionarios());
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new Departamento());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            openChildFormInPanel(new Estadisticas());
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnInicio_Click_1(object sender, EventArgs e)
+        {
+            if (activeForm != null)
+                activeForm.Close();
         }
     }
 }
