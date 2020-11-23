@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static PruebasBeta.Form1;
 
 namespace PruebasBeta
 {
@@ -113,6 +114,7 @@ namespace PruebasBeta
             {
                 this.Hide();
                 formularioLogin.Show();
+
             }
             else
             {

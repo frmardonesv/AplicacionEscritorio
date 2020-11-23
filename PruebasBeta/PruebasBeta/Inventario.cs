@@ -25,73 +25,10 @@ namespace PruebasBeta
 
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-            panelPrinc.Visible = false;
-            panelInventario.Dock = DockStyle.Fill;
-            panelInventario.Visible = true;
-        }
-
-        private void btnListar_Click(object sender, EventArgs e)
-        {
-            {
-                {
-                    ora.Open();
-                    OracleCommand comando = new OracleCommand("LISTAR_INVENTARIO", ora);
-                    comando.CommandType = System.Data.CommandType.StoredProcedure;
-                    comando.Parameters.Add("inventario", OracleType.Cursor).Direction = ParameterDirection.Output;
-
-
-                    OracleDataAdapter adapter = new OracleDataAdapter();
-                    adapter.SelectCommand = comando;
-                    DataTable tabla1 = new DataTable();
-                    adapter.Fill(tabla1);
-                    dataGridView1.DataSource = tabla1;
-
-                    ora.Close();
-
-                }
-
-            }
-        }
-
         private void Inventario_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void btnAgregarFunc_Click(object sender, EventArgs e)
-            {            
-                if (string.IsNullOrEmpty(txtHabi.Text) || string.IsNullOrEmpty(txtCamas.Text) || string.IsNullOrEmpty(txtInclu.Text) || string.IsNullOrEmpty(txtNoInclu.Text))
-                {
-
-                    MessageBox.Show("Debe completar la informacion");
-
-                    return;
-
-                }
-                try
-                {
-                    ora.Open();
-                    OracleCommand comando = new OracleCommand("REGISTRAR_INVENTARIO", ora);
-                    comando.CommandType = System.Data.CommandType.StoredProcedure;
-                    comando.Parameters.Add("c_habitacion", OracleType.VarChar).Value = txtHabi.Text;
-                    comando.Parameters.Add("c_camas", OracleType.VarChar).Value = txtCamas.Text;
-                    comando.Parameters.Add("c_incluido", OracleType.VarChar).Value = txtInclu.Text;
-                    comando.Parameters.Add("c_baños", OracleType.Number).Value = txtNoInclu.Text;
-                    comando.ExecuteNonQuery();
-                    MessageBox.Show("Inventario Agregado.");                               
-                }
-                catch (Exception)
-                {
-
-                    MessageBox.Show("Fallo al registrar un inventario");
-
-
-                }
-                ora.Close();
-            }
-
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             {
@@ -105,48 +42,6 @@ namespace PruebasBeta
         private void txtHabi_KeyPress(object sender, KeyPressEventArgs e)
         {
 
-        }
-
-
-        private void btnAct_Click(object sender, EventArgs e)
-        {
-                try
-                {
-                    ora.Open();
-                    OracleCommand comando = new OracleCommand("ACTUALIZAR_INVENTARIO", ora);
-                    comando.CommandType = System.Data.CommandType.StoredProcedure;
-                    comando.Parameters.Add("idp", OracleType.Number).Value = txtInv.Text;
-                    comando.Parameters.Add("hab", OracleType.Number).Value = txtHabi.Text;
-                    comando.Parameters.Add("cam", OracleType.VarChar).Value = txtCamas.Text;
-                    comando.Parameters.Add("inc", OracleType.VarChar).Value = txtInclu.Text;
-                    comando.Parameters.Add("bañ", OracleType.Number).Value = txtNoInclu.Text;
-                    comando.ExecuteNonQuery();
-                    MessageBox.Show("Inventario Actualizado");
-
-                }
-                catch (Exception)
-                {
-
-                    MessageBox.Show("Fallo al actualizar un inventario");
-                }
-                ora.Close();
-            }
-
-        private void btnActualizar_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(txtInv.Text))
-            {
-
-                MessageBox.Show("Primero debe elegir un inventario para actualizarlo.");
-
-                return;
-
-            }
-            panelPrinc.Visible = false;
-            panelInventario.Dock = DockStyle.Fill;
-            panelInventario.Visible = true;
-            btnAgregar.Visible = false;
-            btnAct.Visible = true;
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
@@ -190,5 +85,125 @@ namespace PruebasBeta
             ora.Close();
         }
 
+        private void btnAgregar_Click_1(object sender, EventArgs e)
+        {
+            panelPrinc.Visible = false;
+            panelInventario.Dock = DockStyle.Fill;
+            panelInventario.Visible = true;
+        }
+
+        private void btnListar_Click_1(object sender, EventArgs e)
+        {
+            {
+                {
+                    ora.Open();
+                    OracleCommand comando = new OracleCommand("LISTAR_INVENTARIO", ora);
+                    comando.CommandType = System.Data.CommandType.StoredProcedure;
+                    comando.Parameters.Add("inventario", OracleType.Cursor).Direction = ParameterDirection.Output;
+
+
+                    OracleDataAdapter adapter = new OracleDataAdapter();
+                    adapter.SelectCommand = comando;
+                    DataTable tabla1 = new DataTable();
+                    adapter.Fill(tabla1);
+                    dataGridView1.DataSource = tabla1;
+
+                    ora.Close();
+
+                }
+
+            }
+        }
+
+        private void btnEditar_Click_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtInv.Text))
+            {
+
+                MessageBox.Show("Primero debe elegir un inventario para actualizarlo.");
+
+                return;
+
+            }
+            panelPrinc.Visible = false;
+            panelInventario.Dock = DockStyle.Fill;
+            panelInventario.Visible = true;
+            btnAgregar.Visible = false;
+            btnActualizar.Visible = true;
+        }
+
+        private void btnAtras_Click_1(object sender, EventArgs e)
+        {
+            btnActualizar.Visible = false;
+            panelInventario.Visible = false;
+            panelPrinc.Visible = true;
+            btnAtras.Visible = false;
+            panel7.Visible = false;
+            label9.Text = "Modulo Clientes";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtHabi.Text) || string.IsNullOrEmpty(txtCamas.Text) || string.IsNullOrEmpty(txtInclu.Text) || string.IsNullOrEmpty(txtNoInclu.Text))
+            {
+
+                MessageBox.Show("Debe completar la informacion");
+
+                return;
+
+            }
+            try
+            {
+                ora.Open();
+                OracleCommand comando = new OracleCommand("REGISTRAR_INVENTARIO", ora);
+                comando.CommandType = System.Data.CommandType.StoredProcedure;
+                comando.Parameters.Add("c_habitacion", OracleType.VarChar).Value = txtHabi.Text;
+                comando.Parameters.Add("c_camas", OracleType.VarChar).Value = txtCamas.Text;
+                comando.Parameters.Add("c_incluido", OracleType.VarChar).Value = txtInclu.Text;
+                comando.Parameters.Add("c_baños", OracleType.Number).Value = txtNoInclu.Text;
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Inventario Agregado.");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Fallo al registrar un inventario");
+
+
+            }
+            ora.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ora.Open();
+                OracleCommand comando = new OracleCommand("ACTUALIZAR_INVENTARIO", ora);
+                comando.CommandType = System.Data.CommandType.StoredProcedure;
+                comando.Parameters.Add("idp", OracleType.Number).Value = txtInv.Text;
+                comando.Parameters.Add("hab", OracleType.Number).Value = txtHabi.Text;
+                comando.Parameters.Add("cam", OracleType.VarChar).Value = txtCamas.Text;
+                comando.Parameters.Add("inc", OracleType.VarChar).Value = txtInclu.Text;
+                comando.Parameters.Add("bañ", OracleType.Number).Value = txtNoInclu.Text;
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Inventario Actualizado");
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Fallo al actualizar un inventario");
+            }
+            ora.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtHabi.Text = "";
+            txtCamas.Text = "";
+            txtInclu.Text = "";
+            txtNoInclu.Text = "";
+        }
     }
 }

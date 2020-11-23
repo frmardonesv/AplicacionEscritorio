@@ -13,6 +13,7 @@ using System.IO;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using Font = iTextSharp.text.Font;
+using static PruebasBeta.Form1;
 
 namespace PruebasBeta
 {
@@ -23,15 +24,69 @@ namespace PruebasBeta
             InitializeComponent();
         }
 
+
         OracleConnection ora = new OracleConnection("DATA SOURCE =localhost:1521/xe ; PASSWORD = hola123 ; USER ID = EmiliaTan");
 
+        
+        private void Estadisticas_Load(object sender, EventArgs e)
+        {
 
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        }
+
+        public void crearPdf(String filename)
+        {
+            
+        }
+
+        public DataTable deptoList()
+        {
+
+            DataTable dt = new DataTable();
+            if (MantenerDato.valorPersonal == "1")
+            {
+                {
+                    ora.Open();
+                    OracleCommand comando = new OracleCommand("GETPRUEBAS", ora);
+                    comando.CommandType = System.Data.CommandType.StoredProcedure;
+                    comando.Parameters.Add("p_id", OracleType.Number).Value = MantenerDato.valorZona;
+                    comando.Parameters.Add("CURSOR_", OracleType.Cursor).Direction = ParameterDirection.Output;
+
+
+                    OracleDataAdapter adapter = new OracleDataAdapter(comando);
+                    adapter.Fill(dt);
+                    adapter.Dispose();
+                    ora.Close();
+
+                }
+            }
+            else {
+                ora.Open();
+                OracleCommand comando = new OracleCommand("REPORTE_SA", ora);
+                comando.CommandType = System.Data.CommandType.StoredProcedure;
+                comando.Parameters.Add("CURSOR_", OracleType.Cursor).Direction = ParameterDirection.Output;
+
+
+                OracleDataAdapter adapter = new OracleDataAdapter(comando);
+                adapter.Fill(dt);
+                adapter.Dispose();
+                ora.Close();
+
+            }
+
+            return dt;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
         {
 
             DataTable dt = new DataTable();
             Document document = new Document();
-            PdfWriter.GetInstance(document, new FileStream("reporte.pdf", FileMode.Create)); 
+            PdfWriter.GetInstance(document, new FileStream("reporte.pdf", FileMode.Create));
             document.Open();
             Paragraph title = new Paragraph();
             title.Font = FontFactory.GetFont(FontFactory.TIMES, 18f, BaseColor.BLACK);
@@ -78,33 +133,42 @@ namespace PruebasBeta
 
                 }
                 document.Add(table);
-               
+
             }
             document.Close();
-        }
-
-
-    
-        
-        private void Estadisticas_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        public void crearPdf(String filename)
-        {
-            
+            MessageBox.Show("Reporte creado, revise su carpeta de reportes.");
         }
 
         private void btnListar_Click(object sender, EventArgs e)
         {
             btnReporte.Visible = true;
             btnListar.Visible = false;
+            if (MantenerDato.valorPersonal == "1")
+            {
+                {
+                    ora.Open();
+                    OracleCommand comando = new OracleCommand("GETPRUEBAS", ora);
+                    comando.CommandType = System.Data.CommandType.StoredProcedure;
+                    comando.Parameters.Add("p_id", OracleType.Number).Value = MantenerDato.valorZona;
+                    comando.Parameters.Add("CURSOR_", OracleType.Cursor).Direction = ParameterDirection.Output;
+
+
+                    OracleDataAdapter adapter = new OracleDataAdapter();
+                    adapter.SelectCommand = comando;
+                    DataTable tabla1 = new DataTable();
+                    adapter.Fill(tabla1);
+                    dataGridView1.DataSource = tabla1;
+
+                    ora.Close();
+
+                }
+            }
+            else
             {
                 ora.Open();
-                OracleCommand comando = new OracleCommand("LISTAR_REPORTE", ora);
+                OracleCommand comando = new OracleCommand("REPORTE_SA", ora);
                 comando.CommandType = System.Data.CommandType.StoredProcedure;
-                comando.Parameters.Add("rep", OracleType.Cursor).Direction = ParameterDirection.Output;
+                comando.Parameters.Add("CURSOR_", OracleType.Cursor).Direction = ParameterDirection.Output;
 
 
                 OracleDataAdapter adapter = new OracleDataAdapter();
@@ -114,26 +178,8 @@ namespace PruebasBeta
                 dataGridView1.DataSource = tabla1;
 
                 ora.Close();
-
             }
-        }
-        public DataTable deptoList()
-        {
-            DataTable dt = new DataTable();
-            {
-                ora.Open();
-                OracleCommand comando = new OracleCommand("LISTAR_REPORTE", ora);
-                comando.CommandType = System.Data.CommandType.StoredProcedure;
-                comando.Parameters.Add("rep", OracleType.Cursor).Direction = ParameterDirection.Output;
-
-
-                OracleDataAdapter adapter = new OracleDataAdapter(comando);                
-                adapter.Fill(dt);
-                adapter.Dispose();
-                ora.Close();
-
             }
-            return dt;
         }
     }
-}
+

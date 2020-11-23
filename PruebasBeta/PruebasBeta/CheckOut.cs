@@ -26,12 +26,23 @@ namespace PruebasBeta
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            txtDepto.Text = dtgMultas.CurrentRow.Cells[8].Value.ToString();
+
         }
 
-        private void btnListar_Click(object sender, EventArgs e)
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            ora.Open();
+            OracleCommand comando = new OracleCommand("ACTUALIZAR_ESTADO", ora);
+            comando.CommandType = System.Data.CommandType.StoredProcedure;
+            comando.Parameters.Add("idp", OracleType.Number).Value = Convert.ToInt32(txtDepto.Text);
+            comando.ExecuteNonQuery();
+            MessageBox.Show("Estado departamento actualizado");
+            ora.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             ora.Open();
             OracleCommand comando = new OracleCommand("LISTAR_MULTAS", ora);
@@ -48,15 +59,9 @@ namespace PruebasBeta
             ora.Close();
         }
 
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        private void dtgMultas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            ora.Open();
-            OracleCommand comando = new OracleCommand("ACTUALIZAR_ESTADO", ora);
-            comando.CommandType = System.Data.CommandType.StoredProcedure;
-            comando.Parameters.Add("idp", OracleType.Number).Value = Convert.ToInt32(txtDepto.Text);
-            comando.ExecuteNonQuery();
-            MessageBox.Show("Estado departamento actualizado");
-            ora.Close();
+            txtDepto.Text = dtgMultas.CurrentRow.Cells[8].Value.ToString();
         }
     }
 }

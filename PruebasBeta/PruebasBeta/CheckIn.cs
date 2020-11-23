@@ -28,9 +28,9 @@ namespace PruebasBeta
         private void btnAgregar_Click(object sender, EventArgs e)
         {
 
-        }
+        }                       
 
-        private void btnListar_Click(object sender, EventArgs e)
+        private void btnListar_Click_1(object sender, EventArgs e)
         {
             ora.Open();
             OracleCommand comando = new OracleCommand("LISTAR_CHECKIN", ora);
@@ -47,14 +47,7 @@ namespace PruebasBeta
             ora.Close();
         }
 
-        private void TablaDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            txtRut.Text = TablaDatos.CurrentRow.Cells[0].Value.ToString();
-            txtDesc.Text = TablaDatos.CurrentRow.Cells[2].Value.ToString();
-            txtID.Text = TablaDatos.CurrentRow.Cells[1].Value.ToString();
-        }
-
-        private void btnAct_Click(object sender, EventArgs e)
+        private void btnActualizar_Click(object sender, EventArgs e)
         {
             ora.Open();
             OracleCommand comando = new OracleCommand("ACTUALIZAR_CHECKIN", ora);
@@ -64,6 +57,13 @@ namespace PruebasBeta
             comando.ExecuteNonQuery();
             MessageBox.Show("Check In Actualizado");
             ora.Close();
+        }
+
+        private void TablaDatos_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            txtRut.Text = TablaDatos.CurrentRow.Cells[0].Value.ToString();
+            txtDesc.Text = TablaDatos.CurrentRow.Cells[2].Value.ToString();
+            txtID.Text = TablaDatos.CurrentRow.Cells[1].Value.ToString();
         }
     }
 }

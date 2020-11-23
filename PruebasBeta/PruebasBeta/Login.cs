@@ -20,13 +20,18 @@ namespace PruebasBeta
         }
 
         OracleConnection ora = new OracleConnection("DATA SOURCE =localhost:1521/xe ; PASSWORD = hola123 ; USER ID = EmiliaTan");
+        Estadisticas es = new Estadisticas();
 
         private void Minimizar_Click_1(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
 
-
+        public static class MantenerDato
+            {
+            public static string valorZona;
+            public static string valorPersonal;
+        }
 
         private void Salir_Click_1(object sender, EventArgs e)
         {
@@ -93,10 +98,15 @@ namespace PruebasBeta
                     comando.Parameters.AddWithValue(":contra", txtContra.Text);
 
                     OracleDataReader lector = comando.ExecuteReader();
-
+                    
                     Form1 formularioLogin = new Form1();
                     if (lector.Read())
                     {
+                        MantenerDato.valorZona = null;
+                        MantenerDato.valorZona += lector["ZONAS_ID_ZONAS"].ToString();
+
+                        MantenerDato.valorPersonal = null;
+                        MantenerDato.valorPersonal += lector["TIPO_PERSONAL_ID_TIPO_PRS"].ToString();
 
                         if (lector["TIPO_PERSONAL_ID_TIPO_PRS"].ToString() == "2")
                         {
@@ -113,6 +123,7 @@ namespace PruebasBeta
                             ora.Close();
                             formulario.Show();
                             this.Hide();
+                            
                         }
                         else if (lector["TIPO_PERSONAL_ID_TIPO_PRS"].ToString() == "3")
                         {
@@ -122,6 +133,8 @@ namespace PruebasBeta
                             formulario.Show();
                             this.Hide();
                         }
+
+                        
                     }
                     else
                     {
