@@ -146,6 +146,8 @@ namespace PruebasBeta
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            ListarZonas();
+            ListarTipo();
             txtPersonal.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtNombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             txtApellido.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
@@ -153,8 +155,10 @@ namespace PruebasBeta
             txtTelefono.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             txtCorreo.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             txtContra.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            comboBoxzona.SelectedValue = dataGridView1.CurrentRow.Cells[7].Value.ToString();
-            comboBoxtipo.SelectedValue = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+            comboBoxzona.SelectedValue = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+            comboBoxtipo.SelectedValue = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+
+            MessageBox.Show(comboBoxtipo.Text);
         }
 
         private void btnListar_Click(object sender, EventArgs e)
@@ -187,8 +191,6 @@ namespace PruebasBeta
             }
             panelPrinc.Visible = false;
             panelFuncion.Dock = DockStyle.Fill;
-            ListarZonas();
-            ListarTipo();
             panelFuncion.Visible = true;
             btnAgregar.Visible = false;
             btnActualizar.Visible = true;

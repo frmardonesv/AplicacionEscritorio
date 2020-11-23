@@ -325,10 +325,8 @@ namespace PruebasBeta
             panelDepartamento.Dock = DockStyle.Fill;
             panelDepartamento.Visible = true;
             btnAgregar.Visible = false;
-            btnActualizar.Visible = true;
-            ListarZonas();
-            ListarInventario();
-            ListarEstados();
+            btnActualizar.Visible = true;         
+
         }
 
         private void btnElimi_Click(object sender, EventArgs e)
@@ -346,18 +344,22 @@ namespace PruebasBeta
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
+            ListarInventario();
+            ListarEstados();
+            ListarZonas();
             txtIDept.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtMetros.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             txtDireccion.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             txtDescripcion.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             txtPrecio.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            cmbZona.ValueMember = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            cmbInventario.ValueMember = dataGridView1.CurrentRow.Cells[7].Value.ToString();
-            cmbEstado.ValueMember = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+            cmbZona.SelectedValue = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            cmbInventario.SelectedValue = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+            cmbEstado.SelectedValue = dataGridView1.CurrentRow.Cells[8].Value.ToString();
             var data = (Byte[])(dataGridView1.CurrentRow.Cells[5].Value);
             var stream = new MemoryStream(data);
             PicImage.Image = Image.FromStream(stream);
             pictureBox1.Image = Image.FromStream(stream);
+
         }
 
         private void button2_Click(object sender, EventArgs e)
